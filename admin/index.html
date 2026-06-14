@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      CMS.registerPreviewStyle("/css/style.css");
+
+      var PagesPreview = createClass({
+        render: function() {
+          var entry = this.props.entry;
+          var heading = entry.getIn(['data', 'heading']) || '';
+          return h('div', { id: 'content', className: 'spanning' },
+            h('div', { className: 'promo clearfix' },
+              h('div', { className: 'wrap' },
+                h('h1', {}, heading),
+                h('div', { className: 'long-copy' },
+                  this.props.widgetFor('body')
+                )
+              )
+            )
+          );
+        }
+      });
+
+      var HomePreview = createClass({
+        render: function() {
+          var entry = this.props.entry;
+          return h('div', {},
+            h('h1', {}, entry.getIn(['data', 'heading']) || ''),
+            h('p', {}, entry.getIn(['data', 'providers']) || ''),
+            h('p', {}, entry.getIn(['data', 'phone']) || ''),
+            h('hr', {}),
+            this.props.widgetFor('services_body'),
+            h('hr', {}),
+            this.props.widgetFor('patients_body')
+          );
+        }
+      });
+
+      ["about", "about-team", "about-insurance", "about-services", "contact", "patients"].forEach(function(name) {
+        CMS.registerPreviewTemplate(name, PagesPreview);
+      });
+      CMS.registerPreviewTemplate("home", HomePreview);
+    </script>
+  </body>
+</html>

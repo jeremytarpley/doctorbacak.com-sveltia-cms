@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div id="content" class="spanning">
+  {% include "about-nav.html" %}
+  <div class="promo clearfix">
+    <div class="wrap">
+      {% if heading %}<h1>{{ heading }}</h1>{% endif %}
+      <div class="long-copy">
+        {{ content | safe }}
+      </div>
+    </div>
+  </div>
+</div>

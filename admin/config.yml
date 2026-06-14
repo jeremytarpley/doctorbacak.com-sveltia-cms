@@ -1,45 +1,78 @@
-# config.yml
+local_backend: true
 
 backend:
   name: git-gateway
-  branch: master
-media_folder: 'images'
-public_folder: '/images'
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
 collections:
-  - name: 'pages'
-    label: 'Pages'
-    editor:
-      preview: false
+  - name: "home"
+    label: "Home Page"
     files:
-      - label: 'Home'
-        name: 'homepg'
-        file: '/index.html'
+      - name: "home"
+        label: "Home Page"
+        file: "content/pages/home.md"
         fields:
-          - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'default'}
-          - {label: 'Title', name: 'title', widget: 'string', default: 'about'}
-          - {label: 'Meta Description', name: 'description', widget: 'string', default: ''} 
-          - {label: 'Body', name: 'body', widget: 'markdown'}
-      - label: 'About'
-        name: 'about'
-        file: '/about/index.html'
+          - { label: "SEO Title", name: "title", widget: "string" }
+          - { label: "SEO Description", name: "description", widget: "text" }
+          - { label: "Main Heading", name: "heading", widget: "string" }
+          - { label: "Providers Line", name: "providers", widget: "string" }
+          - { label: "Phone Number", name: "phone", widget: "string" }
+          - { label: "Services Section", name: "services_body", widget: "markdown" }
+          - { label: "Services Button Text", name: "services_cta", widget: "string" }
+          - { label: "Patients Section", name: "patients_body", widget: "markdown" }
+          - { label: "Patients Button Text", name: "patients_cta", widget: "string" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "about"
+        label: "About"
+        file: "content/pages/about.md"
         fields:
-          - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'default'}
-          - {label: 'Title', name: 'title', widget: 'string', default: 'about'}
-          - {label: 'Meta Description', name: 'description', widget: 'string', default: ''} 
-          - {label: 'Body', name: 'body', widget: 'markdown'}
-      - label: 'Insurance'
-        name: 'insurance'
-        file: '/about/insurance.html'
+          - { label: "SEO Title", name: "title", widget: "string" }
+          - { label: "SEO Description", name: "description", widget: "text" }
+          - { label: "Page Heading", name: "heading", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "about-team"
+        label: "Team"
+        file: "content/pages/about-team.md"
         fields:
-          - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'default'}
-          - {label: 'Title', name: 'title', widget: 'string', default: 'about'}
-          - {label: 'Meta Description', name: 'description', widget: 'string', default: ''} 
-          - {label: 'Body', name: 'body', widget: 'markdown'}
-      - label: 'Insurance'
-        name: 'insurance'
-        file: '/about/insurance.html'
+          - { label: "SEO Title", name: "title", widget: "string" }
+          - { label: "SEO Description", name: "description", widget: "text" }
+          - { label: "Page Heading", name: "heading", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "about-insurance"
+        label: "Insurance"
+        file: "content/pages/about-insurance.md"
         fields:
-          - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'default'}
-          - {label: 'Title', name: 'title', widget: 'string', default: 'about'}
-          - {label: 'Meta Description', name: 'description', widget: 'string', default: ''} 
-          - {label: 'Body', name: 'body', widget: 'markdown'}
+          - { label: "SEO Title", name: "title", widget: "string" }
+          - { label: "SEO Description", name: "description", widget: "text" }
+          - { label: "Page Heading", name: "heading", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "about-services"
+        label: "Services"
+        file: "content/pages/about-services.md"
+        fields:
+          - { label: "SEO Title", name: "title", widget: "string" }
+          - { label: "SEO Description", name: "description", widget: "text" }
+          - { label: "Page Heading", name: "heading", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "contact"
+        label: "Contact"
+        file: "content/pages/contact.md"
+        fields:
+          - { label: "SEO Title", name: "title", widget: "string" }
+          - { label: "SEO Description", name: "description", widget: "text" }
+          - { label: "Page Heading", name: "heading", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "patients"
+        label: "Patient Resources"
+        file: "content/pages/patients.md"
+        fields:
+          - { label: "SEO Title", name: "title", widget: "string" }
+          - { label: "SEO Description", name: "description", widget: "text" }
+          - { label: "Page Heading", name: "heading", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }

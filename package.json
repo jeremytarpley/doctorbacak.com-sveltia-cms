@@ -4,9 +4,14 @@
   "description": "BCS Abundant Life Family Practice website",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "cms": "npx @11ty/eleventy --serve --port=8080 & npx decap-server"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@types/node": "^25.9.3"
+  },
+  "allowScripts": {
+    "concurrently@10.0.3": true
   }
 }
