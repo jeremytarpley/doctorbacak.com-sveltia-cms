@@ -1,8 +1,8 @@
-local_backend: true
-
 backend:
-  name: git-gateway
+  name: github
+  repo: jeremytarpley/doctorbacak.com-decap-cms
   branch: main
+  base_url: https://sveltia-cms-auth.jeremytarpley.workers.dev
 
 media_folder: "images"
 public_folder: "/images"
