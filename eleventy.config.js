@@ -8,9 +8,17 @@ module.exports = function (eleventyConfig) {
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
-  eleventyConfig.addPassthroughCopy("images");
+  // Copy web image formats only (excludes design sources like .psd)
+  eleventyConfig.addPassthroughCopy("images/*.{jpg,png}");
   eleventyConfig.addPassthroughCopy("patients/paperwork");
   eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.ignores.add("admin/index.html");
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("_headers");
+
+  // Google Search Console verification must stay at its exact .html path
+  eleventyConfig.addPassthroughCopy("googleade4cc8a9117c14e.html");
+  eleventyConfig.ignores.add("googleade4cc8a9117c14e.html");
 
   // Ignore old HTML pages that are replaced by content/pages/*.md
   eleventyConfig.ignores.add("index.html");

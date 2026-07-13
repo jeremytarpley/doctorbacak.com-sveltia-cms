@@ -5,7 +5,7 @@ heading: BCS Abundant Life Family Practice
 providers: Rusty Bacak MD | Catherine Miller, PA-C | Hope Odom FNP-C
 phone: 979-695-3570
 services_body: |-
-  ### Services
+  ## Services
 
   We offer complete medical care for your entire family from pediatrics to geriatric care.
 
@@ -15,7 +15,7 @@ services_body: |-
   - Gynecological care
 services_cta: Learn more about our practice
 patients_body: |-
-  ### Patients
+  ## Patients
 
   - To schedule an appointment, call 979-695-3570
   - [Review of symptoms form](/patients/paperwork/review-of-symptoms.docx) — Save time, fill it out before you arrive!

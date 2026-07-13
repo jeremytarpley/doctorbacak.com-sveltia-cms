@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,500,700);
-
 .hide-on-mobile {
     display: none;
     visibility: hidden;
@@ -831,7 +829,8 @@ footer .highlight {
 }
 
 .promo-column h3,
-.main h3 {
+.main h3,
+.height-block h2 {
     font:
         bold 1.8rem/2rem "Raleway",
         "Helvetica Neue",
