@@ -1,7 +1,7 @@
 ---
 layout: about-page
 title: "Services offered at our doctor's office in College Station"
-description: "We offer complete medical care for patients in College Station and Bryan, TX. From birth through geriatrics, we can take care of your entire family's needs, from infant well child visits and shots, screening physicals, acute care (colds, flu, sprains, back pain, allergies, headaches etc.)."
+description: "Complete family medical care in College Station & Bryan, TX — well child visits, physicals, immunizations, and acute care from birth through geriatrics."
 id: about
 permalink: /about/services/index.html
 heading: Family Practice Services
