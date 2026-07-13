@@ -2,7 +2,7 @@ local_backend: true
 
 backend:
   name: github
-  repo: jeremytarpley/doctorbacak.com-decap-cms
+  repo: jeremytarpley/doctorbacak.com-sveltia-cms
   branch: main
   base_url: https://sveltia-cms-auth.jeremytarpley.workers.dev
 
