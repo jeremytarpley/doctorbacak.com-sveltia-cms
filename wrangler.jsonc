@@ -1,0 +1,8 @@
+{
+  "name": "doctorbacak-sveltia-cms",
+  "compatibility_date": "2026-07-13",
+  "assets": {
+    "directory": "./_site",
+    "not_found_handling": "404-page"
+  }
+}

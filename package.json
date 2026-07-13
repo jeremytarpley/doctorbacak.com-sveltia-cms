@@ -9,7 +9,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@types/node": "^25.9.3"
+    "@types/node": "^25.9.3",
+    "wrangler": "^4.110.0"
   },
   "allowScripts": {
     "concurrently@10.0.3": true
