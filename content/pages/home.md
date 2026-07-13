@@ -1,13 +1,10 @@
 ---
-layout: home
-title: "BCS Abundant Life Family Practice - Looking for a great family doctor in Bryan/College Station?"
-description: "BCS Abundant Life is a family doctor's office serving Bryan & College Station Texas, offering complete medical care for your entire family from pediatrics to geriatric care. Call 979-695-3570 to schedule an appointment."
-id: homepg
-permalink: /index.html
+title: BCS Abundant Life Family Practice - Looking for a great family doctor in Bryan/College Station?
+description: BCS Abundant Life is a family doctor's office serving Bryan & College Station Texas, offering complete medical care for your entire family from pediatrics to geriatric care. Call 979-695-3570 to schedule an appointment.
 heading: BCS Abundant Life Family Practice
-providers: "Rusty Bacak MD | Catherine Miller, PA-C | Hope Odom FNP-C"
-phone: "979-695-3570"
-services_body: |
+providers: Rusty Bacak MD | Catherine Miller, PA-C | Hope Odom FNP-C
+phone: 979-695-3570
+services_body: |-
   ### Services
 
   We offer complete medical care for your entire family from pediatrics to geriatric care.
@@ -17,7 +14,7 @@ services_body: |
   - Immunizations
   - Gynecological care
 services_cta: Learn more about our practice
-patients_body: |
+patients_body: |-
   ### Patients
 
   - To schedule an appointment, call 979-695-3570
@@ -26,4 +23,7 @@ patients_body: |
 
   **Remember:** we need to see your insurance at every visit!
 patients_cta: More patient resources
+layout: home
+id: homepg
+permalink: /index.html
 ---

@@ -5,7 +5,7 @@
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
-    "cms": "npx @11ty/eleventy --serve --port=8080 & npx decap-server"
+    "cms": "eleventy --serve --port=8080"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
